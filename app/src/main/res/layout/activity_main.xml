@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tips for uploading/scanning images -->
+    <TextView
+        android:id="@+id/tipsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tips_text"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/tips_text"
+        tools:ignore="HardcodedText" />
+
+    <!-- Language switcher buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnEnglish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/english"
+            android:background="@drawable/button_background"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnHindi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hindi"
+            android:background="@drawable/button_background"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+    </LinearLayout>
+
+    <!-- Identify Yourself button -->
+    <Button
+        android:id="@+id/btnIdentifyYourself"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/identify_yourself"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btnCapturePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/capture_photo"
+        android:background="@drawable/button_background"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btnUploadPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/upload_photo"
+        android:background="@drawable/button_background"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="381dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_preview_desc"
+        android:scaleType="centerCrop"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/prediction_placeholder"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:contentDescription="@string/prediction_result_desc"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+private fun preprocessImage(bitmap: Bitmap): ByteBuffer {
+        // Copy the bitmap to ensure it's mutable
+        val mutableBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true)
+
+        // Resize the bitmap to (300, 100)
+        val resizedBitmap = Bitmap.createScaledBitmap(mutableBitmap, 300, 100, true)
+
+        // Log the dimensions for debugging
+        Log.d("BitmapDimensions", "Width: ${resizedBitmap.width}, Height: ${resizedBitmap.height}")
+
+        // Allocate a ByteBuffer to hold the image data
+        val buffer = ByteBuffer.allocateDirect(300 * 100 * 4).order(ByteOrder.nativeOrder())
+
+        // Iterate over the bitmap and convert to grayscale
+        for (y in 0 until 100) {  // Height = 100
+            for (x in 0 until 300) {  // Width = 300
+                val pixel = resizedBitmap.getPixel(x, y)
+                val gray = (Color.red(pixel) * 0.299f + Color.green(pixel) * 0.587f + Color.blue(pixel) * 0.114f) / 255.0f
+                buffer.putFloat(gray)
+            }
+        }
+
+        return buffer
+    }
+
+    private fun processImage(bitmap: Bitmap) {
+        try {
+            val inputBuffer = preprocessImage(bitmap)
+            val outputTensor = tflite.getOutputTensor(0) // Get the output tensor
+            val outputShape = outputTensor.shape() // Get the shape of the output tensor
+            val outputBuffer = Array(outputShape[0]) { FloatArray(outputShape[1]) } // Create buffer with correct shape
+            tflite.run(inputBuffer, outputBuffer)
+
+            val maxValue = outputBuffer[0].maxOrNull()
+            if (maxValue != null) {
+                val predictedClass = outputBuffer[0].indexOfFirst { it == maxValue }
+                val labels = listOf("fake500", "real500", "fake200", "real200")
+                Toast.makeText(
+                    this,
+                    "Prediction: ${labels[predictedClass]}",
+                    Toast.LENGTH_LONG
+                ).show()
+            } else {
+                Toast.makeText(this, "Error: No predictions available.", Toast.LENGTH_LONG).show()
+            }
+        } catch (e: Exception) {
+            Toast.makeText(this, "Error processing image: ${e.message}", Toast.LENGTH_SHORT)
+                .show()
+        }
+    }

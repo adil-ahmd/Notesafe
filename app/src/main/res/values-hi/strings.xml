@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">नोटसेफ</string>
+    <string name="tips_text">सर्वोत्तम परिणामों के लिए सुझाव:\n• उचित प्रकाश व्यवस्था का उपयोग करें।\n• मुद्रा की पूरी छवि कैप्चर करें।\n• सीधे कोण से फोटो लें, तिरछे कोण से नहीं।</string>
+    <string name="capture_photo">फोटो कैप्चर करें</string>
+    <string name="upload_photo">फोटो अपलोड करें</string>
+    <string name="image_preview_desc">छवि पूर्वावलोकन</string>
+    <string name="prediction_result_desc">पूर्वानुमान परिणाम</string>
+    <string name="prediction_placeholder">यहाँ पूर्वानुमान दिखाई देगा</string>
+    <string name="prediction_format">पूर्वानुमान: %1$s (विश्वास: %2$.2f%%)</string>
+    <string name="error_no_predictions">त्रुटि: कोई पूर्वानुमान उपलब्ध नहीं।</string>
+    <string name="error_invalid_index">त्रुटि: अमान्य पूर्वानुमान सूचकांक।</string>
+    <string name="error_loading_image">छवि लोड करने में त्रुटि।</string>
+    <string name="error_photo_metadata">फोटो मेटाडेटा पुनर्प्राप्त करने में त्रुटि: फ़ाइल मौजूद नहीं है</string>
+    <string name="error_photo_capture">फोटो कैप्चर विफल</string>
+    <string name="error_camera">कैमरा खोलने में त्रुटि: %1$s</string>
+    <string name="error_crop">क्रॉप त्रुटि: %1$s</string>
+    <string name="permissions_required">इस ऐप को ठीक से काम करने के लिए अनुमतियाँ आवश्यक हैं।</string>
+    <string name="english">अंग्रेजी</string>
+    <string name="hindi">हिन्दी</string>
+    <string name="identify_yourself">अपनी पहचान करें</string>
+    <string name="note_identification_title">मूल भारतीय बैंकनोट्स की पहचान कैसे करें</string>
+    <string name="note_identification_desc">भारतीय रिज़र्व बैंक (RBI) मूल भारतीय बैंकनोट्स की पहचान के लिए दिशानिर्देश प्रदान करता है। नीचे महात्मा गांधी (नई) श्रृंखला (10, 20, 50, 100, 200, 500, 2000 रुपये) के नोटों के लिए प्रमुख सुरक्षा विशेषताएँ दी गई हैं। प्रामाणिकता की पुष्टि के लिए हमेशा कई विशेषताओं की जाँच करें।</string>
+    <string name="security_features">सुरक्षा विशेषताएँ:\n1. **सी-थ्रू रजिस्टर**: प्रकाश के खिलाफ रखने पर संख्यात्मक अंक (उदा., 500) दिखाई देता है।\n2. **लेटेंट इमेज**: 45 डिग्री के कोण पर अंक (उदा., 500) दिखाई देता है।\n3. **देवनागरी अंक**: देवनागरी में मूल्य (उदा., ५00)।\n4. **महात्मा गांधी चित्र**: उभरा हुआ (इंटैग्लियो) प्रिंटिंग के साथ केंद्रित चित्र।\n5. **सुरक्षा धागा**: रंग बदलने वाला धागा (हरा से नीला) जिसमें ‘भारत’ और ‘RBI’ लिखा हो।\n6. **वॉटरमार्क**: गांधी चित्र और इलेक्ट्रोटाइप अंक (उदा., 500)।\n7. **गवर्नर का हस्ताक्षर**: दाईं ओर RBI प्रतीक के साथ।\n8. **रंग बदलने वाली स्याही**: मूल्य (उदा., ₹500) का रंग बदलता है (हरा से नीला)।\n9. **माइक्रोटेक्स्ट**: छोटा पाठ (उदा., ‘भारत’, ‘RBI’) जो आवर्धक कांच से पढ़ा जा सकता है।\n10. **उभरा प्रिंटिंग**: चित्र, RBI प्रतीक, और ब्लीड लाइनों को स्पर्श करें。\n\nअधिक जानकारी और छवियों के लिए, RBI वेबसाइट पर जाएँ: paisaboltahai.rbi.org.in</string>
+    <string name="view_rbi_website">RBI वेबसाइट पर छवियाँ देखें</string>
+</resources>

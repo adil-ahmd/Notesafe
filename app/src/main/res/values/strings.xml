@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NoteSafe</string>
+    <string name="tips_text">Tips for Best Results:\n• Use proper lighting conditions.\n• Capture the full currency image.\n• Take photos from a straight angle, not tilted.</string>
+    <string name="capture_photo">Capture Photo</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="image_preview_desc">Image Preview</string>
+    <string name="prediction_result_desc">Prediction result</string>
+    <string name="prediction_placeholder">Prediction will appear here</string>
+    <string name="prediction_format">Prediction: %1$s (Confidence: %2$.2f%%)</string>
+    <string name="error_no_predictions">Error: No predictions available.</string>
+    <string name="error_invalid_index">Error: Invalid prediction index.</string>
+    <string name="error_loading_image">Error loading image.</string>
+    <string name="error_photo_metadata">Error retrieving photo metadata: File does not exist</string>
+    <string name="error_photo_capture">Photo capture failed</string>
+    <string name="error_camera">Error opening camera: %1$s</string>
+    <string name="error_crop">Crop error: %1$s</string>
+    <string name="permissions_required">Permissions are required for this app to function properly.</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="identify_yourself">Identify Yourself</string>
+    <string name="note_identification_title">How to Identify Original Indian Banknotes</string>
+    <string name="note_identification_desc">The Reserve Bank of India (RBI) provides guidelines to identify genuine Indian banknotes. Below are key security features for notes in the Mahatma Gandhi (New) Series (Rs. 10, 20, 50, 100, 200, 500, 2000). Always check multiple features to confirm authenticity.</string>
+    <string name="security_features">Security Features:\n1. **See-through Register**: Denominational numeral (e.g., 500) visible when held against light.\n2. **Latent Image**: Numeral (e.g., 500) visible at a 45-degree angle.\n3. **Devanagari Numeral**: Denomination in Devanagari (e.g., ५00).\n4. **Mahatma Gandhi Portrait**: Centered portrait with raised (intaglio) printing.\n5. **Security Thread**: Color-changing thread (green to blue) with ‘Bharat’ and ‘RBI’.\n6. **Watermark**: Gandhi portrait and electrotype numeral (e.g., 500).\n7. **Governor’s Signature**: On the right with RBI emblem.\n8. **Color-Changing Ink**: Denomination (e.g., ₹500) changes color (green to blue).\n9. **Microtext**: Tiny text (e.g., ‘Bharat’, ‘RBI’) readable with a magnifying glass.\n10. **Raised Printing**: Feel the portrait, RBI emblem, and bleed lines.\n\nFor more details and images, visit the RBI website: paisaboltahai.rbi.org.in</string>
+    <string name="view_rbi_website">View RBI Website for Images</string>
+</resources>

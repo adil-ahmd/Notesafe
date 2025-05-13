@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note_identification_title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/note_identification_title"
+            tools:ignore="HardcodedText" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/descTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note_identification_desc"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/note_identification_desc"
+            tools:ignore="HardcodedText" />
+
+        <!-- Security Features -->
+        <TextView
+            android:id="@+id/securityFeaturesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/security_features"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/security_features"
+            tools:ignore="HardcodedText" />
+
+        <!-- Button to View RBI Website -->
+        <Button
+            android:id="@+id/btnViewRbiWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_rbi_website"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    </LinearLayout>
+</ScrollView>
