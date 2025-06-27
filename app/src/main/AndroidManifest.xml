@@ -12,10 +12,11 @@
     <uses-permission
         android:name="android.permission.READ_MEDIA_IMAGES"
         tools:ignore="SelectedPhotoAccess" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission
         android:name="android.permission.READ_DEVICE_CONFIG"
-        tools:ignore="ProtectedPermissions" /> <!-- Permission for images -->
-    <!-- Declare the camera feature -->
+        tools:ignore="ProtectedPermissions" />
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
@@ -31,19 +32,19 @@
         android:theme="@style/Theme.AppCompat"
         tools:targetApi="34">
         <activity
-            android:name=".NoteIdentificationActivity"
-            android:exported="false" />
-        <!-- Updated for Android 14 -->
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/AppTheme">
+            android:name=".LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Add the FileProvider declaration here -->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NoteIdentificationActivity"
+            android:exported="false" />
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.notesafe.fileprovider"
@@ -54,5 +55,4 @@
                 android:resource="@xml/file_paths" />
         </provider>
     </application>
-
 </manifest>

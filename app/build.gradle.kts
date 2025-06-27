@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     kotlin("android")
     id("org.jetbrains.kotlin.plugin.compose")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -46,6 +47,8 @@ android {
 }
 
 dependencies {
+    implementation("com.google.gms:google-services:4.3.15")
+    implementation("com.google.android.gms:play-services-location:21.3.0")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.11.0")
@@ -61,6 +64,8 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.8.0")
     implementation("androidx.fragment:fragment-ktx:1.6.1")
     implementation(libs.androidx.activity)
+    implementation(libs.firebase.auth.ktx)
+    implementation(libs.firebase.firestore.ktx)
 
     // Testing
     testImplementation("junit:junit:4.13.2")

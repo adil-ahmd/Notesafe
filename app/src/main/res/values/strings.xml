@@ -1,4 +1,19 @@
 <resources>
+    <string name="login_title">Login to NoteSafe</string>
+    <string name="phone_hint">Enter Phone Number</string>
+    <string name="otp_hint">Enter OTP</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="invalid_phone">Please enter a valid phone number</string>
+    <string name="invalid_otp">Please enter a valid OTP</string>
+    <string name="otp_sent">OTP sent successfully</string>
+    <string name="otp_failed">Failed to send OTP: %1$s</string>
+    <string name="otp_verification_failed">OTP verification failed</string>
+    <string name="login_success">Login successful</string>
+    <string name="logged_out">Logged out successfully</string>
+    <string name="logout">Logout</string>
+    <string name="record_saved">Record saved successfully</string>
+    <string name="record_failed">Failed to save record</string>
     <string name="app_name">NoteSafe</string>
     <string name="tips_text">Tips for Best Results:\n• Use proper lighting conditions.\n• Capture the full currency image.\n• Take photos from a straight angle, not tilted.</string>
     <string name="capture_photo">Capture Photo</string>
@@ -22,4 +37,11 @@
     <string name="note_identification_desc">The Reserve Bank of India (RBI) provides guidelines to identify genuine Indian banknotes. Below are key security features for notes in the Mahatma Gandhi (New) Series (Rs. 10, 20, 50, 100, 200, 500, 2000). Always check multiple features to confirm authenticity.</string>
     <string name="security_features">Security Features:\n1. **See-through Register**: Denominational numeral (e.g., 500) visible when held against light.\n2. **Latent Image**: Numeral (e.g., 500) visible at a 45-degree angle.\n3. **Devanagari Numeral**: Denomination in Devanagari (e.g., ५00).\n4. **Mahatma Gandhi Portrait**: Centered portrait with raised (intaglio) printing.\n5. **Security Thread**: Color-changing thread (green to blue) with ‘Bharat’ and ‘RBI’.\n6. **Watermark**: Gandhi portrait and electrotype numeral (e.g., 500).\n7. **Governor’s Signature**: On the right with RBI emblem.\n8. **Color-Changing Ink**: Denomination (e.g., ₹500) changes color (green to blue).\n9. **Microtext**: Tiny text (e.g., ‘Bharat’, ‘RBI’) readable with a magnifying glass.\n10. **Raised Printing**: Feel the portrait, RBI emblem, and bleed lines.\n\nFor more details and images, visit the RBI website: paisaboltahai.rbi.org.in</string>
     <string name="view_rbi_website">View RBI Website for Images</string>
+    <string name="error_loading_model">error loading model</string>
+    <string name="permissions_granted">permission granted</string>
+    <string name="error_no_image_selected">error selecting image</string>
+    <string name="error_cropped_image_null" translatable="false">error cropped image</string>
+    <string name="error_creating_image_file" translatable="false">Error creating image file: %1$s</string>
+    <string name="error_no_camera_app" translatable="false">no camera app</string>
+    <string name="error_processing_image_model" translatable="false">error processing image model</string>
 </resources>

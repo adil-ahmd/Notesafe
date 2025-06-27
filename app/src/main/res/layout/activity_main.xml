@@ -99,4 +99,11 @@
         android:contentDescription="@string/prediction_result_desc"
         tools:ignore="HardcodedText" />
 
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:layout_marginTop="16dp" />
+
 </LinearLayout>
